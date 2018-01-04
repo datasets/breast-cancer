@@ -1,0 +1,94 @@
+{
+    "title": "Breast cancer",
+    "name": "breast-cancer",
+    "sources": [
+        {
+            "title": "OpenML - breast-cancer",
+            "path": "https://www.openml.org/d/13"
+        }
+    ],
+    "licences": [
+        {
+            "name": "odc-pddl",
+            "title": "Open Data Commons Public Domain Dedication and Licence (PDDL)",
+            "path": "http://opendatacommons.org/licenses/pddl/"
+        }
+    ],
+    "resources": [
+        {
+            "path": "data/breast-cancer.csv",
+            "profile": "tabular-data-resource",
+            "encoding": "utf-8",
+            "name": "breast-cancer",
+            "format": "csv",
+            "mediatype": "text/csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "age",
+                        "type": "string",
+                        "format": "default",
+                        "description": "10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99."
+                    },
+                    {
+                        "name": "menopause",
+                        "type": "string",
+                        "format": "default",
+                        "description": "lt40, ge40, premeno"
+                    },
+                    {
+                        "name": "tumor-size",
+                        "type": "string",
+                        "format": "default",
+                        "description": "0-4, 5-9, 10-14, 15-19, 20-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59"
+                    },
+                    {
+                        "name": "inv-nodes",
+                        "type": "string",
+                        "format": "default",
+                        "description": "0-2, 3-5, 6-8, 9-11, 12-14, 15-17, 18-20, 21-23, 24-26, 27-29, 30-32, 33-35, 36-39"
+                    },
+                    {
+                        "name": "node-caps",
+                        "type": "string",
+                        "format": "default",
+                        "description": "yes, no"
+                    },
+                    {
+                        "name": "deg-malig",
+                        "type": "integer",
+                        "format": "default",
+                        "description": "1, 2, 3"
+                    },
+                    {
+                        "name": "breast",
+                        "type": "string",
+                        "format": "default",
+                        "description": "left, right"
+                    },
+                    {
+                        "name": "breast-quad",
+                        "type": "string",
+                        "format": "default",
+                        "description": "left-up, left-low, right-up, right-low, central"
+                    },
+                    {
+                        "name": "irradiat",
+                        "type": "string",
+                        "format": "default",
+                        "description": "yes, no"
+                    },
+                    {
+                        "name": "class",
+                        "type": "string",
+                        "format": "default",
+                        "description": "no-recurrence-events, recurrence-events"
+                    }
+                ],
+                "missingValues": [
+                    ""
+                ]
+            }
+        }
+    ]
+}
