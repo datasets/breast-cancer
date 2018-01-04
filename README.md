@@ -17,18 +17,23 @@ Class Distribution:
 * no-recurrence-events: 201 instances
 * recurrence-events: 85 instances
 
-### Output data
-Output data is located in directory `data`
+Data is located in directory `data`
 
 `data/breast-cancer.csv`
 
-## Scripts
+## Preparation
+
+To get our output data several things are done to input data:
+* missing values marked with "?" are replaced with ""(empty space)
+* all " are removed
+* all ' are removed
+* yes and no values are replaced with true and false
 
 Scripts for dataset are located in directory `scripts`
 
 `scripts/main.py`
 
-## Licence
+## License
 Licensed under the [Public Domain Dedication and License][pddl] (assuming
 either no rights or public domain license in source data).
 
