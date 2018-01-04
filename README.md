@@ -1,4 +1,5 @@
-This is a dataset about breast cancer occurences.
+This is a dataset about breast cancer occurences. Breast cancer is the most commonly 
+diagnosed cancer in women and is the second leading cause of cancer death among women.
 
 ## Data
 
