@@ -1,4 +1,4 @@
-This is a dataset about breast cancer occurences
+This is a dataset about breast cancer occurences.
 
 ## Data
 
