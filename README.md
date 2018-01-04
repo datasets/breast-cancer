@@ -11,7 +11,7 @@ Matjaz Zwitter & Milan Soklic (physicians) Institute of Oncology University Medi
 
 * 286 instances
 * 10 attributes
-* Missing values: yes (marked with 'N/A')
+* Missing values: yes
 
 Class Distribution:
 * no-recurrence-events: 201 instances
