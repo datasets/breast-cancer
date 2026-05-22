@@ -34,4 +34,4 @@ Scripts for dataset are located in directory `scripts`
 Licensed under the [Public Domain Dedication and License][pddl] (assuming
 either no rights or public domain license in source data).
 
-[pddl]: http://opendatacommons.org/licenses/pddl/1.0/
+[pddl]: https://opendatacommons.org/licenses/pddl/

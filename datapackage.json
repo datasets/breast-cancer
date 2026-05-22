@@ -1,17 +1,19 @@
 {
     "title": "Breast cancer",
     "name": "breast-cancer",
+    "description": "Breast cancer recurrence dataset from the University Medical Centre, Institute of Oncology, Ljubljana, Yugoslavia. Contains patient attributes (age, menopausal status, tumor characteristics) and a binary recurrence class label.",
     "sources": [
         {
+            "name": "openml-breast-cancer",
             "title": "OpenML - breast-cancer",
             "path": "https://www.openml.org/d/13"
         }
     ],
-    "licences": [
+    "licenses": [
         {
-            "name": "odc-pddl",
+            "name": "ODC-PDDL-1.0",
             "title": "Open Data Commons Public Domain Dedication and Licence (PDDL)",
-            "path": "http://opendatacommons.org/licenses/pddl/"
+            "path": "https://opendatacommons.org/licenses/pddl/"
         }
     ],
     "resources": [
@@ -22,67 +24,68 @@
             "name": "breast-cancer",
             "format": "csv",
             "mediatype": "text/csv",
+            "description": "Patient records with clinical attributes and breast cancer recurrence outcome. Each row represents one patient.",
             "schema": {
                 "fields": [
                     {
                         "name": "age",
                         "type": "string",
                         "format": "default",
-                        "description": "10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99."
+                        "description": "Patient age range in years: 10-19, 20-29, 30-39, 40-49, 50-59, 60-69, 70-79, 80-89, 90-99."
                     },
                     {
                         "name": "mefalsepause",
                         "type": "string",
                         "format": "default",
-                        "description": "lt40, ge40, premeno"
+                        "description": "Menopausal status: lt40 (pre-menopausal, age < 40), ge40 (post-menopausal, age >= 40), premefalse (pre-menopausal). Note: column name and value 'premefalse' are artefacts of a script bug and will be corrected to 'menopause' / 'premeno' in a future update."
                     },
                     {
                         "name": "tumor-size",
                         "type": "string",
                         "format": "default",
-                        "description": "0-4, 5-9, 10-14, 15-19, 20-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59"
+                        "description": "Tumor size range in mm: 0-4, 5-9, 10-14, 15-19, 20-24, 25-29, 30-34, 35-39, 40-44, 45-49, 50-54, 55-59."
                     },
                     {
                         "name": "inv-falsedes",
                         "type": "string",
                         "format": "default",
-                        "description": "0-2, 3-5, 6-8, 9-11, 12-14, 15-17, 18-20, 21-23, 24-26, 27-29, 30-32, 33-35, 36-39"
+                        "description": "Number of involved axillary lymph nodes (range): 0-2, 3-5, 6-8, 9-11, 12-14, 15-17, 18-20, 21-23, 24-26. Note: column name is an artefact of a script bug and will be corrected to 'inv-nodes' in a future update."
                     },
                     {
                         "name": "falsede-caps",
                         "type": "boolean",
                         "format": "default",
-                        "description": "yes, no"
+                        "description": "Whether the cancer has spread to the lymph node capsule: true or false. Note: column name is an artefact of a script bug and will be corrected to 'node-caps' in a future update."
                     },
                     {
                         "name": "deg-malig",
                         "type": "integer",
                         "format": "default",
-                        "description": "1, 2, 3"
+                        "description": "Degree of malignancy (histological grade): 1, 2, or 3."
                     },
                     {
                         "name": "breast",
                         "type": "string",
                         "format": "default",
-                        "description": "left, right"
+                        "description": "Affected breast: left or right."
                     },
                     {
                         "name": "breast-quad",
                         "type": "string",
                         "format": "default",
-                        "description": "left-up, left-low, right-up, right-low, central"
+                        "description": "Quadrant of the breast where the tumor is located: left_up, left_low, right_up, right_low, or central."
                     },
                     {
                         "name": "irradiat",
                         "type": "boolean",
                         "format": "default",
-                        "description": "yes, no"
+                        "description": "Whether the patient received radiation therapy: true or false."
                     },
                     {
                         "name": "class",
                         "type": "string",
                         "format": "default",
-                        "description": "no-recurrence-events, recurrence-events"
+                        "description": "Recurrence outcome: recurrence-events (cancer recurred) or false-recurrence-events (no recurrence). Note: the 'false-' prefix is an artefact of a script bug; the correct value is 'no-recurrence-events'."
                     }
                 ],
                 "missingValues": [
